@@ -1,11 +1,28 @@
 import React from "react";
 import "./App.css";
+import Home from "./Home";
+import Header from "./Header";
 
 function App() {
   return (
     // BEM
     <div className="app">
-      <h1>Let's build an Airbnb clone!</h1>
+      <Header />
+      <Home />
+
+      {/* Home Page*/}
+      {/* Header */}
+
+      {/* Banner */}
+      {/* Search */}
+
+      {/* Cards */}
+
+      {/* Footer */}
+
+      {/* Search Page*/}
+      {/* Header */}
+      {/* ... */}
     </div>
   );
 }
