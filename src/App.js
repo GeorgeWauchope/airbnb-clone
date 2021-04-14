@@ -9,6 +9,7 @@ function App() {
     <div className="app">
       <Header />
       <Home />
+      <Footer />
 
       {/* Home Page*/}
       {/* Header */}
