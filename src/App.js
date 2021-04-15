@@ -3,28 +3,28 @@ import "./App.css";
 import Home from "./Home";
 import Header from "./Header";
 import Footer from "./Footer";
+import SearchPage from "./SearchPage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     // BEM
     <div className="app">
-      <Header />
-      <Home />
-      <Footer />
+      <Router>
+        <Header />
 
-      {/* Home Page*/}
-      {/* Header */}
+        <Switch>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
 
-      {/* Banner */}
-      {/* Search */}
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
 
-      {/* Cards */}
-
-      {/* Footer */}
-
-      {/* Search Page*/}
-      {/* Header */}
-      {/* ... */}
+        <Footer />
+      </Router>
     </div>
   );
 }
